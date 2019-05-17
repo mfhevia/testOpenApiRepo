@@ -1,0 +1,11 @@
+type: object
+properties:
+  statusCode:
+    description: Response http status code
+    type: number
+    example: 400
+  message:
+    description: Error message
+    type: string
+    minLength: 1
+    example: Bad request

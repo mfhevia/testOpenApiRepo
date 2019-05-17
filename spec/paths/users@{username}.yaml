@@ -40,8 +40,22 @@ get:
             email: user@example.com
     '403':
       description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            statusCode: 403
+            message: Forbidden
     '404':
       description: User not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            statusCode: 404
+            message: User not found
 put:
   tags:
     - User
