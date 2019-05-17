@@ -229,6 +229,9 @@
           },
           "404": {
             "description": "User not found"
+          },
+          "409": {
+            "description": "Conflict updating user"
           }
         },
         "requestBody": {

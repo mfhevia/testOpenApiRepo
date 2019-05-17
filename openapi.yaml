@@ -176,6 +176,8 @@ paths:
           description: Invalid user supplied
         '404':
           description: User not found
+        '409':
+          description: Conflict updating user
       requestBody:
         content:
           application/json:
